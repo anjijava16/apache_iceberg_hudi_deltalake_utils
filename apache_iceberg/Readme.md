@@ -1,5 +1,6 @@
 # Apache Iceberg
 
+
 It feels like just a few years ago I was learning about MapReduce and Hadoop.
 
 Now companies like Facebook and Netflix have made major improvements to how to store and process data.
@@ -15,8 +16,13 @@ But honestly. What in the world is Iceberg?
 
 If you’re curious and want to dive into what Iceberg is and why companies have switched to it, here are 5 great articles
 
+
+
 Apache Iceberg: An Architectural Look Under the Covers by Jason Hughes
 https://lnkd.in/gA7NGtx3
+
+
+https://www.dremio.com/blog/apache-iceberg-101-your-guide-to-learning-apache-iceberg-concepts-and-practices/
 
 Migrating to Apache Iceberg at Adobe Experience Platform by Jaemi Bremner
 
