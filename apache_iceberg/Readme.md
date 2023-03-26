@@ -10,6 +10,9 @@ In particular, Iceberg was created at Netflix to improve several limitations of 
 
 But honestly. What in the world is Iceberg?
 
+![image](https://user-images.githubusercontent.com/5849522/227791239-b1e9c049-2a2f-4115-876d-6695d813699f.png)
+
+
 If you’re curious and want to dive into what Iceberg is and why companies have switched to it, here are 5 great articles
 
 Apache Iceberg: An Architectural Look Under the Covers by Jason Hughes
