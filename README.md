@@ -1,6 +1,25 @@
 # apache_iceberg_utils
 ## Apache Iceberg
 
+
+https://www.dremio.com/blog/a-hands-on-look-at-the-structure-of-an-apache-iceberg-table/
+
+https://medium.com/starschema-blog/open-table-formats-for-efficient-data-processing-delta-lake-vs-iceberg-vs-hudi-b1107141e9a6
+
+
+
+# HUDI
+1. https://www.linkedin.com/pulse/transactional-data-lake-using-apache-hudi-ravi-shekhram%3FtrackingId=hWhbz1YwOmrLGpKDPshe%252FQ%253D%253D/?trackingId=hWhbz1YwOmrLGpKDPshe%2FQ%3D%3D
+
+
+
+
+# Spark EKS
+1. https://awslabs.github.io/data-on-eks/docs/streaming-platforms/kafka
+2. https://github.com/awslabs/data-on-eks
+3. 
+
+
 Apache Iceberg is a new table format for storing large, slow-moving tabular data. It is designed to improve on the de-facto standard table layout built into Hive, Trino, and Spark.
 
 Background and documentation is available at https://iceberg.apache.org
