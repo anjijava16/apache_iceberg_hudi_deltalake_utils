@@ -1,4 +1,15 @@
 # apache_iceberg_utils
+
+- Data Storage
+- Ingestion
+- Data Abstraction
+- Orchestration
+- Data Quality
+- Access Control
+- Metrics
+- Business Intelligence
+
+
 ## Apache Iceberg
 
 
