@@ -1,0 +1,282 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>icebergtest</groupId>
+  <artifactId>icebergtest1</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>jar</packaging>
+
+  <name>icebergtest1</name>
+  <url>http://maven.apache.org</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <iceberg.version>0.9.1</iceberg.version>
+        <hadoop.version>2.7.0</hadoop.version>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+    
+          <!-- org.apache.hadoop BEGIN-->
+      <dependency>
+          <groupId>org.apache.hadoop</groupId>
+          <artifactId>hadoop-common</artifactId>
+          <version>${hadoop.version}</version>
+      </dependency>
+
+      <dependency>
+          <groupId>org.apache.hadoop</groupId>
+          <artifactId>hadoop-hdfs</artifactId>
+          <version>${hadoop.version}</version>
+      </dependency>
+
+      <dependency>
+          <groupId>org.apache.hadoop</groupId>
+          <artifactId>hadoop-client</artifactId>
+          <version>${hadoop.version}</version>
+          
+    <!--将netty包排除-->
+      <exclusions>
+        <exclusion>
+          <groupId>io.netty</groupId>
+          <artifactId>netty</artifactId>
+        </exclusion>
+      </exclusions>
+          
+      </dependency>
+      
+      <!--解决io.netty.buffer.PooledByteBufAllocator.defaultNumHeapArena()I异常，-->
+      <dependency>
+          <groupId>io.netty</groupId>
+          <artifactId>netty-all</artifactId>
+          <version>4.1.18.Final</version>
+      </dependency>
+
+      <dependency>
+          <groupId>org.apache.hadoop</groupId>
+          <artifactId>hadoop-mapreduce-client-core</artifactId>
+          <version>${hadoop.version}</version>
+      </dependency>
+      
+          <dependency>
+          <groupId>org.apache.hadoop</groupId>
+          <artifactId>hadoop-auth</artifactId>
+          <version>${hadoop.version}</version>
+      </dependency>
+      
+          <dependency>
+          <groupId>org.apache.hadoop</groupId>
+          <artifactId>hadoop-mapreduce-client-jobclient</artifactId>
+          <version>${hadoop.version}</version>
+      </dependency>
+      <!-- org.apache.hadoop END-->
+
+      <!-- org.apache.iceberg BEGIN-->
+      <dependency>
+        <groupId>org.apache.iceberg</groupId>
+        <artifactId>iceberg-core</artifactId>
+        <version>${iceberg.version}</version>
+      </dependency>
+
+
+      <dependency>
+          <groupId>org.apache.iceberg</groupId>
+          <artifactId>iceberg-api</artifactId>
+          <version>${iceberg.version}</version>
+      </dependency>
+      
+        <dependency>
+          <groupId>org.apache.iceberg</groupId>
+          <artifactId>iceberg-parquet</artifactId>
+          <version>${iceberg.version}</version>
+      </dependency>
+     
+
+      
+        <dependency>
+          <groupId>org.apache.iceberg</groupId>
+          <artifactId>iceberg-common</artifactId>
+          <version>${iceberg.version}</version>
+      </dependency>
+      
+        <dependency>
+          <groupId>org.apache.iceberg</groupId>
+          <artifactId>iceberg-orc</artifactId>
+          <version>${iceberg.version}</version>
+      </dependency>
+      
+        <dependency>
+          <groupId>org.apache.iceberg</groupId>
+          <artifactId>iceberg-data</artifactId>
+          <version>${iceberg.version}</version>
+      </dependency>
+      
+        <dependency>
+          <groupId>org.apache.iceberg</groupId>
+          <artifactId>iceberg-hive</artifactId>
+          <version>${iceberg.version}</version>
+      </dependency>
+      
+        <dependency>
+          <groupId>org.apache.iceberg</groupId>
+          <artifactId>iceberg-arrow</artifactId>
+          <version>${iceberg.version}</version>
+      </dependency>
+      
+        <dependency>
+          <groupId>org.apache.iceberg</groupId>
+          <artifactId>iceberg-spark</artifactId>
+          <version>${iceberg.version}</version>
+      </dependency>
+      
+        <dependency>
+          <groupId>org.apache.iceberg</groupId>
+          <artifactId>iceberg-bundled-guava</artifactId>
+          <version>${iceberg.version}</version>
+      </dependency>
+      
+        <dependency>
+          <groupId>org.apache.iceberg</groupId>
+          <artifactId>iceberg-spark-runtime</artifactId>
+          <version>${iceberg.version}</version>
+      </dependency>
+      
+        <dependency>
+          <groupId>org.apache.iceberg</groupId>
+          <artifactId>iceberg-spark2</artifactId>
+          <version>${iceberg.version}</version>
+      </dependency>
+      
+        <dependency>
+          <groupId>org.apache.iceberg</groupId>
+          <artifactId>iceberg-flink</artifactId>
+          <version>${iceberg.version}</version>
+      </dependency>
+      
+        <dependency>
+          <groupId>org.apache.iceberg</groupId>
+          <artifactId>iceberg-pig</artifactId>
+          <version>${iceberg.version}</version>
+      </dependency>
+      
+      <dependency>
+          <groupId>org.apache.iceberg</groupId>
+          <artifactId>iceberg-mr</artifactId>
+          <version>${iceberg.version}</version>
+      </dependency>
+      <!-- org.apache.iceberg END-->
+      
+      
+        <dependency>
+            <groupId>org.apache.spark</groupId>
+            <artifactId>spark-sql_2.11</artifactId>
+            <version>2.4.5</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.spark</groupId>
+            <artifactId>spark-core_2.11</artifactId>
+            <version>2.4.5</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.spark</groupId>
+            <artifactId>spark-streaming-kafka-0-10_2.11</artifactId>
+            <version>2.4.5</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.spark</groupId>
+            <artifactId>spark-mllib_2.11</artifactId>
+            <version>2.4.5</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.codehaus.janino</groupId>
+                    <artifactId>commons-compiler</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        
+        <dependency>
+            <groupId>org.scala-lang</groupId>
+            <artifactId>scala-library</artifactId>
+            <version>2.11.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.scala-lang</groupId>
+            <artifactId>scala-compiler</artifactId>
+            <version>2.11.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.scala-lang</groupId>
+            <artifactId>scala-reflect</artifactId>
+            <version>2.11.0</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind -->
+        
+        
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-core</artifactId>
+            <!--<version>2.7.9</version>-->
+            <version>2.6.6</version>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <!--<version>2.7.9.4</version>-->
+            <version>2.6.5</version>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-annotations</artifactId>
+            <!--<version>2.7.9</version>-->
+            <version>2.6.5</version>
+        </dependency>
+
+
+        <!-- https://mvnrepository.com/artifact/com.alibaba/fastjson -->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>1.2.56</version>
+        </dependency>
+        
+        <dependency>
+           <groupId>org.apache.parquet</groupId>
+           <artifactId>parquet-avro</artifactId>
+           <version>1.11.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.avro</groupId>
+            <artifactId>avro</artifactId>
+            <version>1.10.0</version>
+        </dependency>
+        <dependency>
+           <groupId>org.apache.parquet</groupId>
+           <artifactId>parquet-column</artifactId>
+           <version>1.11.1</version>
+        </dependency>
+
+
+        <!-- https://mvnrepository.com/artifact/org.apache.spark/spark-hive -->
+        <dependency>
+            <groupId>org.apache.spark</groupId>
+            <artifactId>spark-hive_2.11</artifactId>
+            <version>2.4.0</version>
+            <scope>provided</scope>
+        </dependency>
+
+
+
+    
+  </dependencies>
+</project>
+
