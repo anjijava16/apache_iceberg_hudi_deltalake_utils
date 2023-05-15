@@ -1,5 +1,6 @@
 # Apache Iceberg
 
+https://catalog.us-east-1.prod.workshops.aws/workshops/e57af944-04b9-41f5-8285-90295ed32bdc/en-US
 
 It feels like just a few years ago I was learning about MapReduce and Hadoop.
 
