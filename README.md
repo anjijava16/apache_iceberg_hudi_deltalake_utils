@@ -15,10 +15,12 @@
 
 ## Apache Iceberg
 
+### Iceberg medium
+1. https://medium.com/@vutrinh274/i-spent-4-hours-learning-apache-iceberg-heres-what-i-found-9750b0d70d84
 
-https://www.dremio.com/blog/a-hands-on-look-at-the-structure-of-an-apache-iceberg-table/
+2. https://www.dremio.com/blog/a-hands-on-look-at-the-structure-of-an-apache-iceberg-table/
 
-https://medium.com/starschema-blog/open-table-formats-for-efficient-data-processing-delta-lake-vs-iceberg-vs-hudi-b1107141e9a6
+3. https://medium.com/starschema-blog/open-table-formats-for-efficient-data-processing-delta-lake-vs-iceberg-vs-hudi-b1107141e9a6
 
 
 
